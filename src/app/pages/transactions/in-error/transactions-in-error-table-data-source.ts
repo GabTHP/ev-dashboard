@@ -206,14 +206,6 @@ export class TransactionsInErrorTableDataSource extends TableDataSource<Transact
             this.clearSelectedRows.bind(this), this.refreshData.bind(this));
         }
         break;
-      case TransactionButtonAction.EXPORT_PDF_TRANSACTIONS:
-        if (actionDef.action) {
-          (actionDef as TableExportPdfTransactionsActionDef).action(
-            this.buildFilterValues(), this.dialogService, this.translateService, this.messageService,
-            this.centralServerService, this.spinnerService, this.router,
-            this.clearSelectedRows.bind(this), this.refreshData.bind(this));
-        }
-        break;
     }
   }
 
