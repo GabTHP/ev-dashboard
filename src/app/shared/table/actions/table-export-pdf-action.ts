@@ -17,7 +17,7 @@ export class TableExportPdf implements TableAction {
   private action: TableActionDef = {
     id: ButtonAction.EXPORT_PDF,
     type: 'button',
-    icon: 'cloud_download',
+    icon: 'local_atm',
     color: ButtonActionColor.PRIMARY,
     name: 'general.generate_expense',
     tooltip: 'general.tooltips.generate_expense',

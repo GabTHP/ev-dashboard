@@ -2561,6 +2561,11 @@
         "confirm": "Voulez-vous vraiment exporter les sessions correspondant aux filtres ?",
         "error": "Une erreur est survenue pendant l'export des sessions, vérifiez les logs"
       },
+      "export_pdf": {
+        "title": "Exporter une note de frais",
+        "confirm": "Voulez-vous vraiment exporter les sessions correspondant aux filtres ?",
+        "error": "Une erreur est survenue pendant la création de la note de frais, vérifiez les logs"
+      },
       "soft_stop": {
         "title": "Arrêter la Session",
         "confirm": "Voulez-vous vraiment inetrrompre la session de '{{user}}' ?"

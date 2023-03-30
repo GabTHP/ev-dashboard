@@ -30,9 +30,9 @@ export class TableExportPdfTransactionsAction extends TableExportPdf {
     messageService: MessageService, centralServerService: CentralServerService, spinnerService: SpinnerService,
     router: Router, clearSelectedRows: () => void, refresh?: () => Observable<void>) {
 
-    super.exportPdf(filters, 'exported-transactions.pdf',
-    'transactions.dialog.export.title', 'transactions.dialog.export.confirm',
-    'transactions.dialog.export.error',
+    super.exportPdf(filters, 'note_de_frais.pdf',
+    'transactions.dialog.export_pdf.title', 'transactions.dialog.export_pdf.confirm',
+    'transactions.dialog.export_pdf.error',
       centralServerService.exportTransactionsPdf.bind(centralServerService),
       dialogService, translateService, messageService,
       centralServerService, spinnerService, router);
