@@ -1,11 +1,46 @@
 // Create Material custom theme
 @use '@angular/material' as mat;
+@use 'sass:map';
 @import 'node_modules/@mat-datetimepicker/core/datetimepicker/datetimepicker-theme.scss';
+
 
 $min-contrast-ratio: 2.5;
 
 // Material Theming
 @include mat.core();
+
+$custom-purple-palette: (
+  50: #b474ac,
+  100: #b474ac,
+  200: #b474ac,
+  300: #b474ac,
+  400: #b474ac,
+  500: #b474ac,
+  600: #8b4382,
+  700: #8b4382,
+  800: #8b4382,
+  900: #8b4382,
+  A100: #b474ac,
+  A200: #8b4382,
+  A400: #8b4382,
+  A700: #8b4382,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
 
 // Global ---------------------------------
 $app-success: mat.define-palette(mat.$green-palette, 700);
@@ -25,7 +60,7 @@ $app-pink: mat.define-palette(mat.$pink-palette, 700);
 
 // Light Theme ---------------------------------
 // Define colors
-$app-primary: mat.define-palette(mat.$blue-palette, 700);
+$app-primary: mat.define-palette(mat.$custom-purple-palette, 700);
 $app-accent: mat.define-palette(mat.$blue-palette, 500);
 $app-danger: mat.define-palette(mat.$red-palette, 700);
 // Create the theme
